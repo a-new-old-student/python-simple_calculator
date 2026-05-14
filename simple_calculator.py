@@ -10,8 +10,11 @@ elif action == "subtract":
 elif action == "multiply":
     print(numb1 * numb2)
 elif action == "degree":
-    print(numb1 ** numb2)
+    print(numb1 ** numb2) 
 elif action == "divide":
-    print(numb1 / numb2)
+    if numb2 == 0:
+        print("Cannot divide by zero")
+    else:
+        print(numb1 / numb2)
 else:
     print("Invalid action")
